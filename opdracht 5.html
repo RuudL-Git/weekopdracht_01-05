@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5 samen met Do</title>
+
+<script>
+    function klika(){
+        var appendata = document.getElementById("log");
+        var logdata = document.getElementById("logdiv").textContent;
+        var include1 = logdata.includes("knop A");
+            if(include1 == true){
+                appendata.insertAdjacentHTML("afterend","<p>u heeft eerder op knop A geklikt</p>")
+            }
+            else{
+                appendata.insertAdjacentHTML("afterend","<p>u heeft op knop A geklikt</p>")
+            }
+            // probeersel Ruud: console.log(logdata);
+
+    }
+    function klikb(){
+        var appendata = document.getElementById("log");
+        var logdata = document.getElementById("logdiv").textContent;
+        var include1 = logdata.includes("knop B");
+            if(include1 == true){
+                appendata.insertAdjacentHTML("afterend","<p>u heeft eerder op knop B geklikt</p>")
+            }
+            else{
+                appendata.insertAdjacentHTML("afterend","<p>u heeft op knop B geklikt</p>")
+            }
+        
+    }
+    function klikc(){
+        var appendata = document.getElementById("log");
+        var logdata = document.getElementById("logdiv").textContent;
+        var include1 = logdata.includes("knop C");
+        if(include1 == true){
+                appendata.insertAdjacentHTML("afterend","<p>u heeft eerder op knop C geklikt</p>")
+            }
+            else{
+            appendata.insertAdjacentHTML("afterend","<p>u heeft op knop C geklikt</p>")
+            }
+    }
+    function klikd(){
+        var appendata = document.getElementById("log");
+        var logdata = document.getElementById("logdiv").textContent;
+        var include1 = logdata.includes("knop D");
+        if(include1 == true){
+                appendata.insertAdjacentHTML("afterend","<p>u heeft eerder op knop D geklikt</p>")
+            }
+            else{
+            appendata.insertAdjacentHTML("afterend","<p>u heeft op knop D geklikt</p>")
+            }        
+    }
+
+</script>
+</head>
+<body>
+
+<input type="button" id="knopA" value="A" onclick="klika()">
+<input type="button" id="knopB" value="B" onclick="klikb()">
+<input type="button" id="knopC" value="C" onclick="klikc()">
+<input type="button" id="knopD" value="D" onclick="klikd()">
+
+<div id="logdiv">
+    <p id="log"> </p>
+</div>
+
+</body>
+</html>
